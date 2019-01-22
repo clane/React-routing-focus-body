@@ -13,7 +13,7 @@ class Component3 extends Component {
         <Helmet>
           <html lang="en" />
           <meta charSet="utf-8" />
-          <title>Component 3</title>
+          <title>Title of component 3</title>
         </Helmet>
 
         <h2>
