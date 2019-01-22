@@ -1,0 +1,17 @@
+
+#top { margin-top:20px; } 
+#root { width:90%; margin:auto;  } 
+.cat { width:150px; height:150px; }
+
+/* begin routing link styles */
+ul[role="navigation"]  { margin:20px auto; padding:10px;  } 
+ul[role="navigation"]  li { list-style-type:none;  } 
+/* end routing link styles */
+
+div[role="main"] { border:2px solid #000; min-height:300px; } 
+
+*:focus {
+	outline: 3px dotted #00f;
+}
+
+a[aria-current="page"] { font-weight:bold; } 
