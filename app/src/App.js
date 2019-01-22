@@ -34,10 +34,10 @@ class App extends Component {
   }
 
   focusTop() {
-    this.topElementRef.blur(); //needed to reset focus in iOS
+    document.body.blur(); //needed to reset focus in iOS
     setTimeout(
       () => {
-        this.topElementRef.focus();
+				document.body.focus();
       },
       100
     ); //timeout needed for Android
@@ -127,8 +127,9 @@ class App extends Component {
           <html lang="en" />
           <meta charSet="utf-8" />
           <title>
-            React Routing When Components Load - Moving Focus to The Top
+            React Routing When Components Load - Moving Focus to the body 
           </title>
+			    <body tabindex="-1" /> 
         </Helmet>
 
         <div
@@ -141,19 +142,19 @@ class App extends Component {
           Top Element
         </div>
 
-        <h1>React - moving focus to the top after routing</h1>
+        <h1>React - moving focus to the body after routing</h1>
 
         <ul>
           <li>
             <span>Github URL:&nbsp;</span>
-            <a href="https://github.com/clane/React-routing-focus-top">
-              {" "}https://github.com/clane/React-routing-focus-top
+            <a href="https://github.com/clane/React-routing-focus-body">
+              {" "}https://github.com/clane/React-routing-focus-body
             </a>
           </li>
           <li>
             <span>Hosting URL:&nbsp;</span>
-            <a href="http://chrislane.info/REACT/React-routing-focus-top">
-              http://chrislane.info/REACT/React-routing-focus-top{" "}
+            <a href="http://chrislane.info/REACT/React-routing-focus-body">
+              http://chrislane.info/REACT/React-routing-focus-body{" "}
             </a>
           </li>
         </ul>
